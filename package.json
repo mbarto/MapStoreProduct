@@ -83,9 +83,9 @@
         "mapstore2": "file:MapStore2"
     },
     "scripts": {
-        "clean": "rimraf dist",
-        "compile": "npm run clean && mkdirp ./dist && webpack --config prod-webpack.config.js --env.production",
-        "start": "webpack-dev-server --progress --colors --port 8081 --hot --inline --content-base .",
+        "clean": "rimraf build",
+        "compile": "npm run clean && mkdirp ./build/frontend && webpack --config MapStore2/project/standard/prod-webpack.config.js --env.production",
+        "start": "webpack-dev-server --progress --colors --port 8081 --hot --inline --config MapStore2/project/standard/webpack.config.js --content-base .",
         "test": "karma start ./karma.conf.single-run.js",
         "continuoustest": "karma start ./karma.conf.continuous-test.js",
         "mvntest": "karma start ./karma.conf.single-run.js --reporters junit,dots,coverage",

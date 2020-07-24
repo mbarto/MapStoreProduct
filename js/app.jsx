@@ -13,7 +13,7 @@ const ConfigUtils = require('@mapstore/utils/ConfigUtils');
  * ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
 ConfigUtils.setConfigProp('translationsPath', './MapStore2/web/client/translations');
-ConfigUtils.setConfigProp('themePrefix', 'mapstore-product');
+ConfigUtils.setConfigProp('themePrefix', 'mapstore');
 
 /**
  * Use a custom plugins configuration file with:

@@ -10,7 +10,7 @@ npm run lint
 
 if [ $# -eq 0 ]
   then
-    mvn clean install -Dmapstore2.version=$VERSION
+    mvn clean install -f MapStore2/project/standard/pom.xml -Dmapstore2.version=$VERSION
   else
-    mvn clean install -Dmapstore2.version=$1
+    mvn clean install -f MapStore2/project/standard/pom.xml -Dmapstore2.version=$1
 fi
